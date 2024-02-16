@@ -20,7 +20,7 @@ Para executar os testes, siga estas etapas:
 
 1. Clone o repositório do projeto para sua máquina local.
 2. Certifique-se de que o Java e o Maven estão instalados em sua máquina.
-3. Configure a chave de API como uma variável de ambiente chamada `THE_CAT_API_KEY`.
+3. Configure a chave de API dentro da classe Config;
 4. Abra o terminal na raiz do projeto.
 5. Execute os testes com o seguinte comando Maven:
 

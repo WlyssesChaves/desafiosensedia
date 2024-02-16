@@ -7,12 +7,13 @@ import org.testng.annotations.BeforeClass;
 
 public class BaseTest {
     protected static RequestSpecification requestSpec;
+    public static final String API_KEY = System.getenv("THE_CAT_API_KEY");
 
     @BeforeClass
     public void setUp() {
         requestSpec = new RequestSpecBuilder()
                 .setBaseUri(Config.BASE_URL)
-                .addHeader("x-api-key", "live_9ArHy1ayRgyMni0bISvJ8lGgUH5FdleCaBsfMhXlSocqnQKo0HoR6vn76wCuJud0") // Usa a chave de API do ambiente
+                .addHeader("x-api-key", Config.API_KEY) // Usa a chave de API do ambiente
                 .setContentType("application/json")
                 .build();
     }
